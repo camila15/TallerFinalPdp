@@ -1,0 +1,29 @@
+.card{
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    align-items: center;
+    margin-left: 50%;
+    margin-left: 20%;
+    border-radius: 8px;
+    background-color: rgb(247, 242, 242);
+    box-shadow: -5px 5px 9px rgb(170, 165, 165);
+}
+
+.btn{
+    margin-left: 46px;
+}
+
+footer{
+    text-align: center;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+}
