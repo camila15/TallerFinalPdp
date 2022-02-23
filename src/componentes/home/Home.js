@@ -12,8 +12,7 @@ const Home = () => {
         dificultad: ''
     })
 
-    const handleInputChange = (event) => {
-        //console.log(event.target.value)
+    const handleInputChange = (event) => {    
         setDatos({
             ...datos,
             [event.target.name]: event.target.value
@@ -26,9 +25,6 @@ const Home = () => {
         let user = datos.usuario
         let category = datos.categoria
         let difficult = datos.dificultad
-        /*console.log(datos.usuario);
-        console.log(datos.categoria);
-        console.log(datos.dificultad);*/
         history.push(`/Home/Game/${user}/${category}/${difficult}`);
     }
 
@@ -43,7 +39,7 @@ const Home = () => {
                             <br />
                             <br />
                             <label>Usuario</label>
-                            <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Ingrese nombre"
+                            <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Ingrese usuario"
                                 onChange={handleInputChange} required
                             />
                         </div>
@@ -84,7 +80,7 @@ const Home = () => {
                             <select class="form-control" id="dificultad" name="dificultad" onChange={handleInputChange} required>
                                 <option value="">Seleccionar Dificultad</option>
                                 <option value="easy">Facil</option>
-                                <option value="medium">Normal</option>
+                                <option value="medium">Media</option>
                                 <option value="hard">Dificil</option>
                             </select>
                         </div>
